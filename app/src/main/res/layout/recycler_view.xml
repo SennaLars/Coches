@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:visibility="visible"
+    tools:visibility="visible">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:background="#95000000">
+
+        <TextView
+            android:id="@+id/tv_Matricula"
+            android:layout_width="142dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="95dp"
+            android:layout_marginRight="95dp"
+            android:background="#FFFFFF"
+            android:editable="false"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/tv_Precio"
+            app:layout_constraintTop_toBottomOf="@+id/tvMatriculaPP" />
+
+        <TextView
+            android:id="@+id/tv_Modelo"
+            android:layout_width="147dp"
+            android:layout_height="37dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginEnd="92dp"
+            android:layout_marginRight="92dp"
+            android:layout_marginBottom="120dp"
+            android:background="#FFFFFF"
+            android:editable="false"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tv_Marca"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_Marca"
+            android:layout_width="144dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="121dp"
+            android:background="#FFFFFF"
+            android:editable="false"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_Modelo"
+            app:layout_constraintTop_toBottomOf="@+id/txMarcaPP" />
+
+        <TextView
+            android:id="@+id/tv_Precio"
+            android:layout_width="142dp"
+            android:layout_height="33dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="25dp"
+            android:background="#FFFFFF"
+            android:editable="false"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/txMarcaPP"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvPrecioPP" />
+
+        <TextView
+            android:id="@+id/tvMatriculaPP"
+            android:layout_width="141dp"
+            android:layout_height="78dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="27dp"
+            android:layout_marginEnd="96dp"
+            android:layout_marginRight="96dp"
+            android:background="@color/design_default_color_primary"
+            android:editable="false"
+            android:text="@string/Matricula"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_Matricula"
+            app:layout_constraintEnd_toStartOf="@+id/tvPrecioPP"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvModeloPP"
+            android:layout_width="146dp"
+            android:layout_height="76dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="26dp"
+            android:layout_marginEnd="91dp"
+            android:layout_marginRight="91dp"
+            android:background="@color/design_default_color_primary"
+            android:editable="false"
+            android:text="@string/Modelo"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_Modelo"
+            app:layout_constraintEnd_toStartOf="@+id/txMarcaPP"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_Matricula" />
+
+        <TextView
+            android:id="@+id/txMarcaPP"
+            android:layout_width="146dp"
+            android:layout_height="78dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginRight="12dp"
+            android:background="@color/design_default_color_primary"
+            android:editable="false"
+            android:text="@string/Marca"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tvModeloPP"
+            app:layout_constraintTop_toBottomOf="@+id/tv_Precio" />
+
+        <TextView
+            android:id="@+id/tvPrecioPP"
+            android:layout_width="142dp"
+            android:layout_height="82dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@color/design_default_color_primary"
+            android:editable="false"
+            android:text="@string/Precio"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_Precio"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
